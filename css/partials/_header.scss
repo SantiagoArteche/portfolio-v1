@@ -1,13 +1,14 @@
 header {
     & .navbar {
-        & li{
-        background-color: #014F86;
-        font-size: 13px;
-            & a{
+        & li {
+            background-color: #014F86;
+            font-size: 13px;
+
+            & a {
                 color: #ADB5BD;
             }
         }
-        
+
     }
 
     & .jumbotron {
@@ -17,12 +18,21 @@ header {
             letter-spacing: 4px;
             transition: 1s;
             position: absolute;
-            top: 329px;
+            top: 455px;
             font-size: 3.75rem;
         }
 
         & h1:hover {
             letter-spacing: 20px;
+        }
+
+        & img {
+            transition: 0.8s ease-in-out;
+            border-radius: 20px;
+        }
+
+        & img:hover {
+            transform: rotateX(180deg);
         }
     }
 }

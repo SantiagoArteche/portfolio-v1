@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Santiago Arteche | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./multimedia/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
@@ -28,67 +29,102 @@
                     <a class="nav-link p-0" href="#">CV</a>
                 </li>
                 <li class="nav-item mr-4 rounded">
-                    <a class="nav-link" href="#">Contactarse</a>
-                </li>
-                <li class="nav-item mr-4 rounded">
-                    <a class="nav-link" href="#">Idioma</a>
+                    <a class="nav-link" href="mailto:santiarteche@hotmail.com">Contact</a>
                 </li>
                 <li class="nav-item rounded">
                     <a class="nav-link" href="#">Switch</a>
                 </li>
             </ul>
         </nav>
-
-            <div class="jumbotron d-flex justify-content-center p-0 mb-5">
-                <img src="./multimedia/astronomy-3183482_640 (2).jpg" alt="fondo" class="rounded">
-                <h1 class="text-center d-flex flex-column mb-5"> <span>Santiago</span> <span>Arteche</span></h1>
-            </div>
-        
+        <div class="jumbotron d-flex justify-content-center p-0 mb-5">
+            <img src="./multimedia/code.jpg" alt="code" class="animate__animated animate__pulse">
+            <h1 class="text-center d-flex flex-column mb-5 "> <span>Santiago</span> <span>Arteche</span></h1>
+        </div>
     </header>
 
-    <main>
+    <main class="body-bg">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-9">
+                <div class="col-lg-4 animate__animated animate__fadeIn">
                     <p class="my-4">Hey, I'm Santiago Arteche, a Frontend Developer. I'm always striving to grow and
                         learn something
                         new to build better stuff for better results. I describe myself as a passionate developer who
                         loves coding, learning and growing.</p>
-                    <h2 class="text-center">Tech</h2>
-                    <div class="container row d-flex justify-content-around tech">
-                        <i class="fa-brands fa-html5"></i>
-                        <div >
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-sass"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </div>
-                        <i class="fa-brands fa-js"></i>
+                    <div class="d-flex d-flex flex-column">
+                        <h4 class="text-center rounded border border-light hobbies align-self-center p-2 ">
+                            Hobbies</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-1">Read Books</li>
+                            <li class="mb-1">Play Football</li>
+                            <li class="mb-1">Play Paddle</li>
+                            <li class="mb-1">Play Chess</li>
+                            <li class="mb-1">Hang Out With Friends</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-3 loc rounded p-3">
+                <div class="col-lg-5 tech d-flex flex-column align-items-center animate__animated animate__fadeIn animate__delay-1s">
+                    <h2 class="mb-5 text-center p-2 rounded border border-light">Skills</h2>
+                    <div class="row">
+                        <div>
+                            <i class="fa-brands fa-html5"></i>
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="ml-3">
+                            <i class="fa-brands fa-css3-alt text-primary"></i>
+                            <h3 class="ml-1">CSS</h3>
+                        </div>
+                        <div class="ml-3">
+                            <i class="fa-brands fa-sass"></i>
+                            <h3 class="ml-2">SASS</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-bootstrap ml-3"></i>
+                            <h3>BOOTSTRAP</h3>
+                        </div>
+
+                        <div>
+                            <div>
+                                <i class="fa-brands fa-js text-warning ml-4"></i>
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                        </div>
+                        <div>
+
+                            <i class="fa-brands fa-git-alt"></i>
+                            <h3 class="ml-2">GIT</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-github ml-1"></i>
+                            <h3>GITHUB</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 loc rounded p-3 mb-4 animate__animated animate__fadeInDownBig animate__delay-2s">
                     <h2>Location</h2>
                     <div class="row ">
-                        <img src="./multimedia/argentina.png" alt="argentina" class="ml-2">
-                        <address class="ml-2">Rosario, Argentina</address>
+                        <img src="./multimedia/argen.png" alt="argentina" class="ml-3">
+                        <address class="ml-2 mb-3">Rosario, Santa Fe, Argentina</address>
                     </div>
-                    <h2>Email</h2>
-                    <a href="mailto:santiarteche@hotmail.com">santiarteche@hotmail.com</a>
-                    <h2>Phone Number</h2>
-                    <a href="tel:+54-341-365-0110">+54 341 365 0110</a>
-                    <h2>Education</h2>
+                    <h2 class="mb-0">Email</h2>
+                    <a href="mailto:santiarteche@hotmail.com" class="text-light">santiarteche@hotmail.com</a>
+                    <h2 class="mt-3 mb-0">Phone Number</h2>
+                    <a href="tel:+54-341-365-0110" class="text-light">+54 341 365 0110</a>
+                    <h2 class="mt-3 mb-0">Education</h2>
                     <p>1st year of Software Development - Escuela Superior De Comercio N° 49 "Justo Jose De Urquiza"</p>
-                    <h2>Languages</h2>
-                    <ul class="row d-flex list-unstyled">
-                        <li class="mx-4">Spanish</li>
-                        <li>English (mid-level)</li>
+                    <h2 class="mt-3 mb-2">Languages</h2>
+                    <ul class="row d-flex list-unstyled mb-4">
+                        <li class="mx-3 border border-light rounded-pill p-2">Spanish</li>
+                        <li class="border border-light rounded-pill p-2">English (mid-level)</li>
                     </ul>
-                    <div class="row justify-content-around mb-3">
+                    <div class="row justify-content-around mb-4">
                         <i class="fa-brands fa-github"></i>
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-telegram"></i>
                     </div>
                     <a href="mailto:santiarteche@hotmail.com"
-                        class="d-flex justify-content-center text-light contact p-2">Contact Me</a>
+                        class="d-flex justify-content-center text-light contact p-2 border border-light rounded-pill">Contact
+                        Me</a>
                 </div>
             </div>
         </div>
