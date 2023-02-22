@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: #010B14;
+  margin: 0px 310px 0px 310px;
+}
+
+header .navbar li {
+  background-color: #014F86;
+  font-size: 13px;
+}
+header .navbar li a {
+  color: #ADB5BD;
+}
+header .jumbotron {
+  background-color: #010B14;
+}
+header .jumbotron h1 {
+  letter-spacing: 4px;
+  transition: 1s;
+  position: absolute;
+  top: 329px;
+  font-size: 3.75rem;
+}
+header .jumbotron h1:hover {
+  letter-spacing: 20px;
+}
+
+main {
+  margin-top: 140px;
+}
+main .tech i {
+  font-size: 50px;
+}
+main .loc {
+  background-color: #001828;
+  font-size: small;
+}
+main .loc img {
+  height: 30px;
+}
+main .loc .contact {
+  background-color: #014F86;
+}/*# sourceMappingURL=estilos.css.map */

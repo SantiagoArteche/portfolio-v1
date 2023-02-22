@@ -1,0 +1,26 @@
+main {
+    margin-top: 140px;
+
+    & .tech {
+        & i {
+            font-size: 50px;
+        }
+    }
+
+    & .loc {
+        background-color: #001828;
+        font-size: small;
+
+        & img {
+            height: 30px;
+        }
+
+        & .contact {
+            background-color: #014F86;
+        }
+    }
+
+}
+
+
+// #001429 2do color

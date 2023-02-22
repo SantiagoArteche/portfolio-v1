@@ -1,0 +1,28 @@
+header {
+    & .navbar {
+        & li{
+        background-color: #014F86;
+        font-size: 13px;
+            & a{
+                color: #ADB5BD;
+            }
+        }
+        
+    }
+
+    & .jumbotron {
+        background-color: #010B14;
+
+        & h1 {
+            letter-spacing: 4px;
+            transition: 1s;
+            position: absolute;
+            top: 329px;
+            font-size: 3.75rem;
+        }
+
+        & h1:hover {
+            letter-spacing: 20px;
+        }
+    }
+}
