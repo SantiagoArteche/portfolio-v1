@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Playfair+Display:wght@400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +8,13 @@
 
 body {
   background-color: #010B14;
-  margin: 0px 270px 0px 270px;
   overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
 }
 
+header {
+  margin: 0px 270px 0px 270px;
+}
 header .navbar li {
   background-color: #014F86;
   font-size: 13px;
@@ -20,6 +24,7 @@ header .navbar li a {
 }
 header .jumbotron {
   background-color: #010B14;
+  font-family: "Playfair Display", serif;
 }
 header .jumbotron h1 {
   letter-spacing: 4px;
@@ -40,6 +45,7 @@ header .jumbotron img:hover {
 }
 
 main {
+  margin: 0px 270px 0px 270px;
   margin-top: 140px;
 }
 main .hobbies {
@@ -84,4 +90,11 @@ main .loc .contact {
 }
 main .loc i {
   font-size: 30px;
+}
+main .proyect h2 {
+  background-color: #014F86;
+}
+
+footer {
+  background-color: #001828;
 }/*# sourceMappingURL=estilos.css.map */

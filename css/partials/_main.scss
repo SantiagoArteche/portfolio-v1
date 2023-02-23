@@ -1,8 +1,9 @@
 main {
+    margin: $margins;
     margin-top: 140px;
 
     & .hobbies {
-        background-color: #014F86;
+        background-color: $blueTwo;
     }
 
     & .tech {
@@ -15,7 +16,7 @@ main {
         }
 
         & h2 {
-            background-color: #014F86;
+            background-color: $blueTwo;
         }
 
         & h3 {
@@ -55,11 +56,16 @@ main {
         }
 
         & .contact {
-            background-color: #014F86;
+            background-color: $blueTwo;
         }
 
         & i {
             font-size: 30px;
+        }
+    }
+    & .proyect{
+        & h2{
+            background-color: $blueTwo;
         }
     }
 

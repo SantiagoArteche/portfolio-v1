@@ -1,7 +1,8 @@
 header {
+    margin: $margins;
     & .navbar {
         & li {
-            background-color: #014F86;
+            background-color: $blueTwo;
             font-size: 13px;
 
             & a {
@@ -13,7 +14,7 @@ header {
 
     & .jumbotron {
         background-color: #010B14;
-
+        font-family: 'Playfair Display', serif;
         & h1 {
             letter-spacing: 4px;
             transition: 1s;
