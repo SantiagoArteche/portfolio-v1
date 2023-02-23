@@ -1,44 +1,137 @@
 main {
     margin: $margins;
-    margin-top: 140px;
+    margin-top: $marginTop;
+
+    @include large {
+        margin: $marginsLarge;
+        margin-top: $marginTop;
+    }
+
+    @include medium {
+        margin: $marginsMedium;
+        margin-top: $marginTop;
+    }
+
+    @include small {
+        margin: $marginsSmall;
+        margin-top: $marginTop;
+    }
+
+    @include xtrasmall {
+        margin: 0px 5px 0px 5px;
+        margin-top: $marginTop;
+    }
+
+    & ul {
+        & li {
+            @include medium {
+                font-size: small;
+            }
+        }
+    }
 
     & .hobbies {
         background-color: $blueTwo;
+
+        @include medium {
+            font-size: large;
+        }
+
+
     }
 
     & .tech {
+        @include large {
+            margin-bottom: 30px;
+        }
+
         & div {
-            gap: 50px;
+            gap: 60px;
+
+            @include large {
+                gap: 40px;
+            }
+
+            @include xtrasmall {
+                gap: 20px;
+            }
         }
 
         & i {
             font-size: 50px;
+
+            @include medium {
+                font-size: 40px;
+            }
+
+            @include xtrasmall {
+                font-size: 30px;
+            }
         }
 
         & h2 {
             background-color: $blueTwo;
+
+            @include medium {
+                font-size: large;
+            }
         }
 
         & h3 {
             font-size: medium;
+
+            @include medium {
+                font-size: small;
+            }
         }
 
         & .fa-bootstrap {
             color: #713FC1;
+
+            @include xtrasmall {
+                margin-left: 20px !important;
+            }
+
         }
 
         & .fa-sass {
             color: palevioletred;
 
+            @include xtrasmall {
+                margin-left: 7px;
+            }
+
         }
 
         & .fa-html5 {
             color: #e34c26;
+
+            @include xtrasmall {
+                margin-left: 7px;
+            }
+        }
+
+        & .fa-css3-alt {
+            @include xtrasmall {
+                margin-left: 5px;
+            }
         }
 
         & .fa-git-alt {
             color: #f1502f;
+
+            @include xtrasmall {
+                margin-left: 6px;
+            }
+
         }
+
+        & .fa-github {
+            @include xtrasmall {
+                margin-left: 8px !important;
+            }
+        }
+
 
 
     }
@@ -47,7 +140,7 @@ main {
         background-color: #001828;
         font-size: small;
 
-        & h2 {
+        & h3 {
             font-size: medium;
         }
 
@@ -57,16 +150,31 @@ main {
 
         & .contact {
             background-color: $blueTwo;
+
         }
 
         & i {
             font-size: 30px;
         }
     }
-    & .proyect{
-        & h2{
+
+    & .proyect {
+        & h3 {
             background-color: $blueTwo;
+
+            @include medium {
+                font-size: large;
+            }
+
+            & img {
+                @include xtrasmall {
+                    width: 300px !important;
+                }
+            }
         }
+
+
+
     }
 
 }

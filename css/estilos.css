@@ -11,13 +11,54 @@ body {
   overflow-x: hidden;
   font-family: "Nunito", sans-serif;
 }
+@media screen and (max-width: 860px) {
+  body p {
+    font-size: small;
+  }
+}
 
 header {
-  margin: 0px 270px 0px 270px;
+  margin: 0px 260px 0px 260px;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    margin: 0px 90px 0px 90px;
+  }
+}
+@media screen and (max-width: 860px) {
+  header {
+    margin: 0px 40px 0px 40px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  header {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 349px) {
+  header .navbar {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  header .navbar .navbar-nav {
+    flex-direction: row;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 349px) {
+  header .navbar .navbar-nav {
+    flex-direction: row;
+  }
 }
 header .navbar li {
   background-color: #014F86;
-  font-size: 13px;
+  font-size: 15px;
+}
+@media screen and (max-width: 860px) {
+  header .navbar li {
+    font-size: 12px;
+  }
 }
 header .navbar li a {
   color: #ADB5BD;
@@ -30,8 +71,32 @@ header .jumbotron h1 {
   letter-spacing: 4px;
   transition: 1s;
   position: absolute;
-  top: 455px;
+  top: 435px;
   font-size: 3.75rem;
+}
+@media screen and (max-width: 1200px) {
+  header .jumbotron h1 {
+    top: 390px;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  header .jumbotron h1 {
+    font-size: 2.5rem;
+    top: 327px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  header .jumbotron h1 {
+    font-size: 2rem;
+    top: 249px;
+  }
+}
+@media screen and (max-width: 349px) {
+  header .jumbotron h1 {
+    top: 230px;
+    font-size: 1.8rem;
+  }
 }
 header .jumbotron h1:hover {
   letter-spacing: 20px;
@@ -39,47 +104,167 @@ header .jumbotron h1:hover {
 header .jumbotron img {
   transition: 0.8s ease-in-out;
   border-radius: 20px;
+  width: 850px;
+}
+@media screen and (max-width: 1200px) {
+  header .jumbotron img {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 860px) {
+  header .jumbotron img {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  header .jumbotron img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 349px) {
+  header .jumbotron img {
+    width: 300px;
+  }
 }
 header .jumbotron img:hover {
   transform: rotateX(180deg);
 }
 
 main {
-  margin: 0px 270px 0px 270px;
+  margin: 0px 260px 0px 260px;
   margin-top: 140px;
+}
+@media screen and (max-width: 1200px) {
+  main {
+    margin: 0px 90px 0px 90px;
+    margin-top: 140px;
+  }
+}
+@media screen and (max-width: 860px) {
+  main {
+    margin: 0px 40px 0px 40px;
+    margin-top: 140px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  main {
+    margin: 0px 10px 0px 10px;
+    margin-top: 140px;
+  }
+}
+@media screen and (max-width: 349px) {
+  main {
+    margin: 0px 5px 0px 5px;
+    margin-top: 140px;
+  }
+}
+@media screen and (max-width: 860px) {
+  main ul li {
+    font-size: small;
+  }
 }
 main .hobbies {
   background-color: #014F86;
 }
+@media screen and (max-width: 860px) {
+  main .hobbies {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .tech {
+    margin-bottom: 30px;
+  }
+}
 main .tech div {
-  gap: 50px;
+  gap: 60px;
+}
+@media screen and (max-width: 1200px) {
+  main .tech div {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 349px) {
+  main .tech div {
+    gap: 20px;
+  }
 }
 main .tech i {
   font-size: 50px;
 }
+@media screen and (max-width: 860px) {
+  main .tech i {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 349px) {
+  main .tech i {
+    font-size: 30px;
+  }
+}
 main .tech h2 {
   background-color: #014F86;
+}
+@media screen and (max-width: 860px) {
+  main .tech h2 {
+    font-size: large;
+  }
 }
 main .tech h3 {
   font-size: medium;
 }
+@media screen and (max-width: 860px) {
+  main .tech h3 {
+    font-size: small;
+  }
+}
 main .tech .fa-bootstrap {
   color: #713FC1;
+}
+@media screen and (max-width: 349px) {
+  main .tech .fa-bootstrap {
+    margin-left: 20px !important;
+  }
 }
 main .tech .fa-sass {
   color: palevioletred;
 }
+@media screen and (max-width: 349px) {
+  main .tech .fa-sass {
+    margin-left: 7px;
+  }
+}
 main .tech .fa-html5 {
   color: #e34c26;
 }
+@media screen and (max-width: 349px) {
+  main .tech .fa-html5 {
+    margin-left: 7px;
+  }
+}
+@media screen and (max-width: 349px) {
+  main .tech .fa-css3-alt {
+    margin-left: 5px;
+  }
+}
 main .tech .fa-git-alt {
   color: #f1502f;
+}
+@media screen and (max-width: 349px) {
+  main .tech .fa-git-alt {
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 349px) {
+  main .tech .fa-github {
+    margin-left: 8px !important;
+  }
 }
 main .loc {
   background-color: #001828;
   font-size: small;
 }
-main .loc h2 {
+main .loc h3 {
   font-size: medium;
 }
 main .loc img {
@@ -91,8 +276,18 @@ main .loc .contact {
 main .loc i {
   font-size: 30px;
 }
-main .proyect h2 {
+main .proyect h3 {
   background-color: #014F86;
+}
+@media screen and (max-width: 860px) {
+  main .proyect h3 {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 349px) {
+  main .proyect h3 img {
+    width: 300px !important;
+  }
 }
 
 footer {

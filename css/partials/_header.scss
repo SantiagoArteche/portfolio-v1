@@ -1,9 +1,43 @@
 header {
     margin: $margins;
+
+    @include large {
+        margin: $marginsLarge;
+    }
+
+    @include medium {
+        margin: $marginsMedium;
+    }
+
+    @include small {
+        margin: 0px;
+    }
+
     & .navbar {
+        @include xtrasmall {
+            flex-wrap: nowrap;
+        }
+
+        & .navbar-nav {
+            @include small {
+                flex-direction: row;
+                margin-right: 20px;
+
+            }
+
+            @include xtrasmall {
+                flex-direction: row;
+            }
+        }
+
         & li {
             background-color: $blueTwo;
-            font-size: 13px;
+            font-size: 15px;
+
+            @include medium {
+                font-size: 12px;
+            }
+
 
             & a {
                 color: #ADB5BD;
@@ -15,12 +49,33 @@ header {
     & .jumbotron {
         background-color: #010B14;
         font-family: 'Playfair Display', serif;
+
         & h1 {
             letter-spacing: 4px;
             transition: 1s;
             position: absolute;
-            top: 455px;
+            top: 435px;
             font-size: 3.75rem;
+
+            @include large {
+                top: 390px;
+                font-size: 3rem;
+            }
+
+            @include medium {
+                font-size: 2.5rem;
+                top: 327px;
+            }
+
+            @include small {
+                font-size: 2rem;
+                top: 249px;
+            }
+
+            @include xtrasmall {
+                top: 230px;
+                font-size: 1.8rem;
+            }
         }
 
         & h1:hover {
@@ -30,10 +85,29 @@ header {
         & img {
             transition: 0.8s ease-in-out;
             border-radius: 20px;
+            width: 850px;
+
+            @include large {
+                width: 720px;
+            }
+
+            @include medium {
+                width: 550px;
+            }
+
+            @include small {
+                width: 350px;
+            }
+
+            @include xtrasmall {
+                width: 300px;
+            }
+
         }
 
         & img:hover {
             transform: rotateX(180deg);
+
         }
     }
 }
