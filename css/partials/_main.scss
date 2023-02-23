@@ -42,21 +42,24 @@ main {
 
     & .tech {
         @include large {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
-
-        & div {
+        & ul{
             gap: 60px;
 
-            @include large {
-                gap: 40px;
+            @include large{
+                gap: 30px;
             }
-
-            @include xtrasmall {
+            @include medium{
+                gap: 45px;
+            }
+            @include small{
                 gap: 20px;
             }
+            @include xtrasmall{
+                gap: 15px;
+            }
         }
-
         & i {
             font-size: 50px;
 
@@ -88,48 +91,29 @@ main {
         & .fa-bootstrap {
             color: #713FC1;
 
-            @include xtrasmall {
-                margin-left: 20px !important;
-            }
+         
 
         }
 
         & .fa-sass {
             color: palevioletred;
 
-            @include xtrasmall {
-                margin-left: 7px;
-            }
+         
 
         }
 
         & .fa-html5 {
             color: #e34c26;
 
-            @include xtrasmall {
-                margin-left: 7px;
-            }
+         
         }
 
-        & .fa-css3-alt {
-            @include xtrasmall {
-                margin-left: 5px;
-            }
-        }
 
         & .fa-git-alt {
             color: #f1502f;
 
-            @include xtrasmall {
-                margin-left: 6px;
-            }
+          
 
-        }
-
-        & .fa-github {
-            @include xtrasmall {
-                margin-left: 8px !important;
-            }
         }
 
 

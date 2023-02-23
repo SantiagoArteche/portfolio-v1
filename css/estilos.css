@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  margin: 0px 260px 0px 260px;
+  margin: 0px 255px 0px 255px;
 }
 @media screen and (max-width: 1200px) {
   header {
@@ -98,9 +98,6 @@ header .jumbotron h1 {
     font-size: 1.8rem;
   }
 }
-header .jumbotron h1:hover {
-  letter-spacing: 20px;
-}
 header .jumbotron img {
   transition: 0.8s ease-in-out;
   border-radius: 20px;
@@ -126,12 +123,15 @@ header .jumbotron img {
     width: 300px;
   }
 }
-header .jumbotron img:hover {
+header .jumbotron:hover h1 {
+  letter-spacing: 20px;
+}
+header .jumbotron:hover img {
   transform: rotateX(180deg);
 }
 
 main {
-  margin: 0px 260px 0px 260px;
+  margin: 0px 255px 0px 255px;
   margin-top: 140px;
 }
 @media screen and (max-width: 1200px) {
@@ -173,20 +173,30 @@ main .hobbies {
 }
 @media screen and (max-width: 1200px) {
   main .tech {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
-main .tech div {
+main .tech ul {
   gap: 60px;
 }
 @media screen and (max-width: 1200px) {
-  main .tech div {
-    gap: 40px;
+  main .tech ul {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 860px) {
+  main .tech ul {
+    gap: 45px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 575px) {
+  main .tech ul {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 349px) {
-  main .tech div {
-    gap: 20px;
+  main .tech ul {
+    gap: 15px;
   }
 }
 main .tech i {
@@ -221,44 +231,14 @@ main .tech h3 {
 main .tech .fa-bootstrap {
   color: #713FC1;
 }
-@media screen and (max-width: 349px) {
-  main .tech .fa-bootstrap {
-    margin-left: 20px !important;
-  }
-}
 main .tech .fa-sass {
   color: palevioletred;
-}
-@media screen and (max-width: 349px) {
-  main .tech .fa-sass {
-    margin-left: 7px;
-  }
 }
 main .tech .fa-html5 {
   color: #e34c26;
 }
-@media screen and (max-width: 349px) {
-  main .tech .fa-html5 {
-    margin-left: 7px;
-  }
-}
-@media screen and (max-width: 349px) {
-  main .tech .fa-css3-alt {
-    margin-left: 5px;
-  }
-}
 main .tech .fa-git-alt {
   color: #f1502f;
-}
-@media screen and (max-width: 349px) {
-  main .tech .fa-git-alt {
-    margin-left: 6px;
-  }
-}
-@media screen and (max-width: 349px) {
-  main .tech .fa-github {
-    margin-left: 8px !important;
-  }
 }
 main .loc {
   background-color: #001828;
