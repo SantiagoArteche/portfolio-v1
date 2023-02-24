@@ -3,17 +3,4 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
-
-}
-
-body {
-    background-color: #010B14;
-    overflow-x: hidden;
-    font-family: 'Nunito', sans-serif;
-
-    & p {
-        @include medium {
-            font-size: small;
-        }
-    }
 }

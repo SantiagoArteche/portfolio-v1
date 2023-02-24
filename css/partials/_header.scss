@@ -61,22 +61,22 @@ header {
             font-size: 3.75rem;
 
             @include large {
-                top: 390px;
+                top: 265px;
                 font-size: 3rem;
             }
 
             @include medium {
                 font-size: 2.5rem;
-                top: 327px;
+                top: 202px;
             }
 
             @include small {
                 font-size: 2rem;
-                top: 249px;
+                top: 125px;
             }
 
             @include xtrasmall {
-                top: 230px;
+                top: 105px;
                 font-size: 1.8rem;
             }
         }

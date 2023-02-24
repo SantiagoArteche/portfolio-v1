@@ -6,17 +6,6 @@
   color: white;
 }
 
-body {
-  background-color: #010B14;
-  overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
-}
-@media screen and (max-width: 860px) {
-  body p {
-    font-size: small;
-  }
-}
-
 header {
   margin: 0px 255px 0px 255px;
 }
@@ -79,25 +68,25 @@ header .jumbotron h1 {
 }
 @media screen and (max-width: 1200px) {
   header .jumbotron h1 {
-    top: 390px;
+    top: 265px;
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 860px) {
   header .jumbotron h1 {
     font-size: 2.5rem;
-    top: 327px;
+    top: 202px;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
   header .jumbotron h1 {
     font-size: 2rem;
-    top: 249px;
+    top: 125px;
   }
 }
 @media screen and (max-width: 349px) {
   header .jumbotron h1 {
-    top: 230px;
+    top: 105px;
     font-size: 1.8rem;
   }
 }
@@ -133,146 +122,156 @@ header .jumbotron:hover img {
   transform: rotateX(180deg);
 }
 
-main {
+body {
+  background-color: #010B14;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+@media screen and (max-width: 860px) {
+  body p {
+    font-size: small;
+  }
+}
+body main {
   margin: 0px 255px 0px 255px;
   margin-top: 140px;
 }
 @media screen and (max-width: 1200px) {
-  main {
+  body main {
     margin: 0px 90px 0px 90px;
     margin-top: 140px;
   }
 }
 @media screen and (max-width: 860px) {
-  main {
+  body main {
     margin: 0px 40px 0px 40px;
     margin-top: 140px;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
-  main {
+  body main {
     margin: 0px 10px 0px 10px;
     margin-top: 140px;
   }
 }
 @media screen and (max-width: 349px) {
-  main {
+  body main {
     margin: 0px 5px 0px 5px;
     margin-top: 140px;
   }
 }
 @media screen and (max-width: 860px) {
-  main ul li {
+  body main ul li {
     font-size: small;
   }
 }
-main .hobbies {
+body main .hobbies {
   background-color: #014F86;
 }
 @media screen and (max-width: 860px) {
-  main .hobbies {
+  body main .hobbies {
     font-size: large;
   }
 }
 @media screen and (max-width: 1200px) {
-  main .tech {
+  body main .tech {
     margin-bottom: 10px;
   }
 }
-main .tech ul {
+body main .tech ul {
   gap: 60px;
 }
 @media screen and (max-width: 1200px) {
-  main .tech ul {
+  body main .tech ul {
     gap: 30px;
   }
 }
 @media screen and (max-width: 860px) {
-  main .tech ul {
+  body main .tech ul {
     gap: 45px;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
-  main .tech ul {
+  body main .tech ul {
     gap: 20px;
   }
 }
 @media screen and (max-width: 349px) {
-  main .tech ul {
+  body main .tech ul {
     gap: 15px;
   }
 }
-main .tech i {
+body main .tech i {
   font-size: 50px;
 }
 @media screen and (max-width: 860px) {
-  main .tech i {
+  body main .tech i {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 349px) {
-  main .tech i {
+  body main .tech i {
     font-size: 30px;
   }
 }
-main .tech h2 {
+body main .tech h2 {
   background-color: #014F86;
 }
 @media screen and (max-width: 860px) {
-  main .tech h2 {
+  body main .tech h2 {
     font-size: large;
   }
 }
-main .tech h3 {
+body main .tech h3 {
   font-size: medium;
 }
 @media screen and (max-width: 860px) {
-  main .tech h3 {
+  body main .tech h3 {
     font-size: small;
   }
 }
-main .tech .fa-bootstrap {
+body main .tech .fa-bootstrap {
   color: #713FC1;
 }
-main .tech .fa-sass {
+body main .tech .fa-sass {
   color: palevioletred;
 }
-main .tech .fa-html5 {
+body main .tech .fa-html5 {
   color: #e34c26;
 }
-main .tech .fa-git-alt {
+body main .tech .fa-git-alt {
   color: #f1502f;
 }
-main .loc {
+body main .loc {
   background-color: #001828;
   font-size: small;
 }
-main .loc h3 {
+body main .loc h3 {
   font-size: medium;
 }
-main .loc img {
+body main .loc img {
   height: 20px;
 }
-main .loc .contact {
+body main .loc .contact {
   background-color: #014F86;
 }
-main .loc .contact:hover {
+body main .loc .contact:hover {
   text-decoration: none;
   background-color: rgba(25, 53, 212, 0.8);
 }
-main .loc i {
+body main .loc i {
   font-size: 30px;
 }
-main .proyect h3 {
+body main .proyect h3 {
   background-color: #014F86;
 }
 @media screen and (max-width: 860px) {
-  main .proyect h3 {
+  body main .proyect h3 {
     font-size: large;
   }
 }
 @media screen and (max-width: 349px) {
-  main .proyect h3 img {
+  body main .proyect h3 img {
     width: 300px !important;
   }
 }
