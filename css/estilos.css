@@ -21,7 +21,12 @@ header {
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
   header {
-    margin: 0px;
+    margin: 0px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 349px) {
+  header {
+    margin: 0px 5px 0px 5px;
   }
 }
 @media screen and (max-width: 349px) {
@@ -81,7 +86,7 @@ header .jumbotron h1 {
 @media screen and (min-width: 350px) and (max-width: 575px) {
   header .jumbotron h1 {
     font-size: 2rem;
-    top: 125px;
+    top: 120px;
   }
 }
 @media screen and (max-width: 349px) {
@@ -107,7 +112,7 @@ header .jumbotron img {
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
   header .jumbotron img {
-    width: 350px;
+    width: 345px;
   }
 }
 @media screen and (max-width: 349px) {
@@ -126,6 +131,12 @@ body {
   background-color: #010B14;
   overflow-x: hidden;
   font-family: "Nunito", sans-serif;
+}
+body h2 {
+  font-size: 1.5rem;
+}
+body h3 {
+  font-size: 1.4rem;
 }
 @media screen and (max-width: 860px) {
   body p {

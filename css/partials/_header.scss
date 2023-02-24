@@ -10,7 +10,10 @@ header {
     }
 
     @include small {
-        margin: 0px;
+        margin: $marginsSmall;
+    }
+    @include xtrasmall{
+        margin: $marginsXtrasmall;
     }
 
     & .navbar {
@@ -72,7 +75,7 @@ header {
 
             @include small {
                 font-size: 2rem;
-                top: 125px;
+                top: 120px;
             }
 
             @include xtrasmall {
@@ -97,7 +100,7 @@ header {
             }
 
             @include small {
-                width: 350px;
+                width: 345px;
             }
 
             @include xtrasmall {
