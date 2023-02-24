@@ -134,9 +134,14 @@ main {
 
         & .contact {
             background-color: $blueTwo;
-
         }
 
+        & .contact:hover{
+            text-decoration: none;
+            background-color: rgba(25, 53, 212, 0.8);
+        }
+
+        
         & i {
             font-size: 30px;
         }

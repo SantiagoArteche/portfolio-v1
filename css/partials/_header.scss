@@ -32,15 +32,18 @@ header {
 
         & li {
             background-color: $blueTwo;
-            font-size: 15px;
+            font-size: 13px;
 
             @include medium {
-                font-size: 12px;
+                font-size: 11.5px;
             }
 
 
             & a {
                 color: #ADB5BD;
+            }
+            & a:hover {
+                color: white;
             }
         }
 
@@ -54,7 +57,7 @@ header {
             letter-spacing: 4px;
             transition: 1s;
             position: absolute;
-            top: 435px;
+            top: 315px;
             font-size: 3.75rem;
 
             @include large {

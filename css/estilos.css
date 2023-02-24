@@ -53,15 +53,18 @@ header {
 }
 header .navbar li {
   background-color: #014F86;
-  font-size: 15px;
+  font-size: 13px;
 }
 @media screen and (max-width: 860px) {
   header .navbar li {
-    font-size: 12px;
+    font-size: 11.5px;
   }
 }
 header .navbar li a {
   color: #ADB5BD;
+}
+header .navbar li a:hover {
+  color: white;
 }
 header .jumbotron {
   background-color: #010B14;
@@ -71,7 +74,7 @@ header .jumbotron h1 {
   letter-spacing: 4px;
   transition: 1s;
   position: absolute;
-  top: 435px;
+  top: 315px;
   font-size: 3.75rem;
 }
 @media screen and (max-width: 1200px) {
@@ -252,6 +255,10 @@ main .loc img {
 }
 main .loc .contact {
   background-color: #014F86;
+}
+main .loc .contact:hover {
+  text-decoration: none;
+  background-color: rgba(25, 53, 212, 0.8);
 }
 main .loc i {
   font-size: 30px;

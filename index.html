@@ -14,13 +14,14 @@
     <link rel="shortcut icon" href="./multimedia/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-sm d-flex justify-content-between mt-0 p-0 mb-5">
+        <nav class="navbar navbar-expand-sm d-flex justify-content-between p-0 mb-5 animate__animated animate__fadeInDownBig animate__delay-1s">
             <!-- Brand/logo -->
             <img class="navbar-brand" src="./multimedia/logo.png"></img>
 
@@ -37,7 +38,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="jumbotron d-flex justify-content-center p-0 mb-5 container">
+        <div class="jumbotron d-flex justify-content-center p-0 mb-5 container animate__animated animate__fadeInDownBig animate__delay-1s">
             <img src="./multimedia/code.jpg" alt="code">
             <h1 class="text-center d-flex flex-column mb-5 "> <span>Santiago</span> <span>Arteche</span></h1>
         </div>
@@ -46,7 +47,7 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-4 col-12 animate__animated animate__fadeIn flex-shrink-1">
+                <div class="col-xl-4 col-12 animate__animated animate__fadeIn flex-shrink-1 animate__delay-2s">
                     <p class="mb-5">Hey, I'm Santiago Arteche, a Frontend Developer. I'm always striving to grow and
                         learn something
                         new to build better stuff for better results. I describe myself as a passionate developer who
@@ -64,7 +65,7 @@
                     </div>
                 </div>
                 <div
-                    class="col-xl-5 col-12 tech d-flex flex-column align-items-center animate__animated animate__fadeIn animate__delay-1s">
+                    class="col-xl-5 col-12 tech d-flex flex-column align-items-center animate__animated animate__fadeIn animate__delay-3s">
                     <h2 class="mb-5 text-center p-2 rounded border border-light">Tech</h2>
                     <ul class="row list-unstyled d-flex justify-content-around mr-1">
                         <li class="d-flex flex-column align-items-center">
@@ -98,7 +99,7 @@
                     </ul>
                 </div>
                 <div
-                    class="col-xl-3 col-12 loc rounded p-3 mb-4 animate__animated animate__fadeInDownBig animate__delay-2s">
+                    class="col-xl-3 col-12 loc rounded p-3 mb-4 animate__animated animate__fadeIn animate__delay-4s">
                     <h3>Skills</h3>
                     <ul class="list-unstyled row">
                         <li class="ml-2 mt-2 border border-light rounded-pill p-2">Front-End Development</li>
@@ -131,7 +132,7 @@
                         Me</a>
                 </div>
             </div>
-            <section class="mb-3 d-flex flex-column proyect">
+            <section class="mb-3 d-flex flex-column proyect" data-aos="fade-up"  data-aos-easing="linear">
                 <h3 class="text-center mb-3 border border-light rounded p-2 align-self-center">Arteche Clothes</h3>
                 <div class="row d-flex align-items-end ml-5">
                     <a href="https://artecheclothes.netlify.app/">
@@ -144,6 +145,10 @@
     <footer class="p-3 mt-5">
         <p class="text-center m-0">Copyright © - 2023 Santiago Arteche. All rights reserved </p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
