@@ -143,6 +143,9 @@ body {
         & .loc {
             background-color: #001828;
             font-size: small;
+            @include large{
+                max-width: 600px;
+            }
 
             & h3 {
                 font-size: medium;

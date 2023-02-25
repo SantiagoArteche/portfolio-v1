@@ -7,7 +7,7 @@
 }
 
 header {
-  margin: 0px 255px 0px 255px;
+  margin: 0px 260px 0px 260px;
 }
 @media screen and (max-width: 1200px) {
   header {
@@ -144,7 +144,7 @@ body h3 {
   }
 }
 body main {
-  margin: 0px 255px 0px 255px;
+  margin: 0px 260px 0px 260px;
   margin-top: 140px;
 }
 @media screen and (max-width: 1200px) {
@@ -256,6 +256,11 @@ body main .tech .fa-git-alt {
 body main .loc {
   background-color: #001828;
   font-size: small;
+}
+@media screen and (max-width: 1200px) {
+  body main .loc {
+    max-width: 600px;
+  }
 }
 body main .loc h3 {
   font-size: medium;
