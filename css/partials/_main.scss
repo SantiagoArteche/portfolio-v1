@@ -1,53 +1,81 @@
-body {
-    background-color: #010B14;
-    overflow-x: hidden;
-    font-family: 'Nunito', sans-serif;
+main {
+    margin: $margins;
+    margin-top: $marginTop;
 
-    & h2{
-        font-size: 1.5rem;
-    }
-    & h3{
-        font-size: 1.4rem;
-    }
-    & p {
-        @include medium {
-            font-size: small;
-        }
-    }
-
-    & main {
-        margin: $margins;
+    @include large {
+        margin: $marginsLarge;
         margin-top: $marginTop;
+    }
 
-        @include large {
-            margin: $marginsLarge;
-            margin-top: $marginTop;
+    @include medium {
+        margin: $marginsMedium;
+        margin-top: $marginTop;
+    }
+
+    @include small {
+        margin: $marginsSmall;
+        margin-top: $marginTop;
+    }
+
+    @include xtrasmall {
+        margin: $marginsXtrasmall;
+        margin-top: $marginTop;
+    }
+
+    & ul {
+        & li {
+            @include medium {
+                font-size: small;
+            }
         }
+    }
+
+    & .hobbies {
+        background-color: $blueTwo;
 
         @include medium {
-            margin: $marginsMedium;
-            margin-top: $marginTop;
+            font-size: large;
         }
+    }
 
-        @include small {
-            margin: $marginsSmall;
-            margin-top: $marginTop;
-        }
-
-        @include xtrasmall {
-            margin: $marginsXtrasmall;
-            margin-top: $marginTop;
+    & .tech {
+        @include large {
+            margin-bottom: 10px;
         }
 
         & ul {
-            & li {
-                @include medium {
-                    font-size: small;
-                }
+            gap: 60px;
+
+            @include large {
+                gap: 30px;
+            }
+
+            @include medium {
+                gap: 45px;
+            }
+
+            @include small {
+                gap: 20px;
+            }
+
+            @include xtrasmall {
+                gap: 15px;
             }
         }
 
-        & .hobbies {
+        & i {
+            font-size: 50px;
+
+            @include medium {
+                font-size: 40px;
+            }
+
+            @include xtrasmall {
+                font-size: 30px;
+            }
+        }
+
+        & h2 {
             background-color: $blueTwo;
 
             @include medium {
@@ -55,142 +83,98 @@ body {
             }
         }
 
-        & .tech {
-            @include large {
-                margin-bottom: 10px;
+        & h3 {
+            font-size: medium;
+
+            @include medium {
+                font-size: small;
             }
+        }
 
-            & ul {
-                gap: 60px;
-
-                @include large {
-                    gap: 30px;
-                }
-
-                @include medium {
-                    gap: 45px;
-                }
-
-                @include small {
-                    gap: 20px;
-                }
-
-                @include xtrasmall {
-                    gap: 15px;
-                }
-            }
-
-            & i {
-                font-size: 50px;
-
-                @include medium {
-                    font-size: 40px;
-                }
-
-                @include xtrasmall {
-                    font-size: 30px;
-                }
-            }
-
-            & h2 {
-                background-color: $blueTwo;
-
-                @include medium {
-                    font-size: large;
-                }
-            }
-
-            & h3 {
-                font-size: medium;
-
-                @include medium {
-                    font-size: small;
-                }
-            }
-
-            & .fa-bootstrap {
-                color: #713FC1;
-
-
-
-            }
-
-            & .fa-sass {
-                color: palevioletred;
-
-
-
-            }
-
-            & .fa-html5 {
-                color: #e34c26;
-
-
-            }
-
-
-            & .fa-git-alt {
-                color: #f1502f;
-
-
-
-            }
+        & .fa-bootstrap {
+            color: #713FC1;
 
 
 
         }
 
-        & .loc {
-            background-color: #001828;
-            font-size: small;
-            @include large{
-                max-width: 600px;
-            }
+        & .fa-sass {
+            color: palevioletred;
 
-            & h3 {
-                font-size: medium;
+
+
+        }
+
+        & .fa-html5 {
+            color: #e34c26;
+
+
+        }
+
+
+        & .fa-git-alt {
+            color: #f1502f;
+
+
+
+        }
+
+
+
+    }
+
+    & .loc {
+        background-color: #001828;
+        font-size: small;
+
+        @include large {
+            max-width: 525px;
+        }
+
+        & h3 {
+            font-size: medium;
+        }
+
+        & img {
+            height: 20px;
+        }
+
+        & .contact {
+            background-color: $blueTwo;
+        }
+
+        & .contact:hover {
+            text-decoration: none;
+            background-color: rgba(25, 53, 212, 0.8);
+        }
+
+
+        & i {
+            font-size: 30px;
+        }
+    }
+
+    & .proyect {
+        & h3 {
+            background-color: $blueTwo;
+
+            @include medium {
+                font-size: large;
             }
 
             & img {
-                height: 20px;
-            }
-
-            & .contact {
-                background-color: $blueTwo;
-            }
-
-            & .contact:hover {
-                text-decoration: none;
-                background-color: rgba(25, 53, 212, 0.8);
-            }
-
-
-            & i {
-                font-size: 30px;
+                @include xtrasmall {
+                    width: 300px !important;
+                }
             }
         }
 
-        & .proyect {
-            & h3 {
-                background-color: $blueTwo;
 
-                @include medium {
-                    font-size: large;
-                }
-
-                & img {
-                    @include xtrasmall {
-                        width: 300px !important;
-                    }
-                }
-            }
-
-
-
-        }
 
     }
+
 }
+
 
 
 // #001429 2do color

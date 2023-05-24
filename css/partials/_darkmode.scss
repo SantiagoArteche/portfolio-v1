@@ -1,0 +1,67 @@
+.darkMode{
+        background-color: rgb(137, 201, 253);
+        & i{
+            color: black;
+        }
+        & p{
+            color: black;
+        }
+        & h2{
+            color: black;
+        }
+        & li {
+            color: black;
+        }
+        & header{
+            & nav{
+                
+                & li{
+                    background-color: #4788ff;
+                    & a{
+                        color: black;
+                    }
+                    
+                }
+            }
+            & div{
+                background-color: rgb(137, 201, 253);
+                & h1{
+                    & span{color: white !important;}
+                }
+            }
+        }
+        & main{
+            & .hobbies{
+                background-color: #4788ff;
+            }
+            & .tech {
+                & h2{
+                    background-color: #4788ff;
+                }
+                & h3{
+                    color: black;
+                }
+            }
+            & .loc{
+                background-color: #4788ff;
+                border: 2px solid white;
+                padding: 14px !important; 
+                & h3{
+                    color: black;
+                }
+                & a{
+                    color: black !important;
+                }
+                & address{
+                    color: black;
+                }
+                & .contact{
+                    background-color: white;
+                    border:  2px solid black !important;
+                }
+            }
+        }
+        & footer{
+            background-color: #4788ff;
+        }
+    }

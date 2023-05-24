@@ -6,6 +6,23 @@
   color: white;
 }
 
+body {
+  background-color: #010B14;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+body h2 {
+  font-size: 1.5rem;
+}
+body h3 {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 860px) {
+  body p {
+    font-size: small;
+  }
+}
+
 header {
   margin: 0px 260px 0px 260px;
 }
@@ -127,171 +144,213 @@ header .jumbotron:hover img {
   transform: rotateX(180deg);
 }
 
-body {
-  background-color: #010B14;
-  overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
-}
-body h2 {
-  font-size: 1.5rem;
-}
-body h3 {
-  font-size: 1.4rem;
-}
-@media screen and (max-width: 860px) {
-  body p {
-    font-size: small;
-  }
-}
-body main {
+main {
   margin: 0px 260px 0px 260px;
   margin-top: 140px;
 }
 @media screen and (max-width: 1200px) {
-  body main {
+  main {
     margin: 0px 90px 0px 90px;
     margin-top: 140px;
   }
 }
 @media screen and (max-width: 860px) {
-  body main {
+  main {
     margin: 0px 40px 0px 40px;
     margin-top: 140px;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
-  body main {
+  main {
     margin: 0px 10px 0px 10px;
     margin-top: 140px;
   }
 }
 @media screen and (max-width: 349px) {
-  body main {
+  main {
     margin: 0px 5px 0px 5px;
     margin-top: 140px;
   }
 }
 @media screen and (max-width: 860px) {
-  body main ul li {
+  main ul li {
     font-size: small;
   }
 }
-body main .hobbies {
+main .hobbies {
   background-color: #014F86;
 }
 @media screen and (max-width: 860px) {
-  body main .hobbies {
+  main .hobbies {
     font-size: large;
   }
 }
 @media screen and (max-width: 1200px) {
-  body main .tech {
+  main .tech {
     margin-bottom: 10px;
   }
 }
-body main .tech ul {
+main .tech ul {
   gap: 60px;
 }
 @media screen and (max-width: 1200px) {
-  body main .tech ul {
+  main .tech ul {
     gap: 30px;
   }
 }
 @media screen and (max-width: 860px) {
-  body main .tech ul {
+  main .tech ul {
     gap: 45px;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 575px) {
-  body main .tech ul {
+  main .tech ul {
     gap: 20px;
   }
 }
 @media screen and (max-width: 349px) {
-  body main .tech ul {
+  main .tech ul {
     gap: 15px;
   }
 }
-body main .tech i {
+main .tech i {
   font-size: 50px;
 }
 @media screen and (max-width: 860px) {
-  body main .tech i {
+  main .tech i {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 349px) {
-  body main .tech i {
+  main .tech i {
     font-size: 30px;
   }
 }
-body main .tech h2 {
+main .tech h2 {
   background-color: #014F86;
 }
 @media screen and (max-width: 860px) {
-  body main .tech h2 {
+  main .tech h2 {
     font-size: large;
   }
 }
-body main .tech h3 {
+main .tech h3 {
   font-size: medium;
 }
 @media screen and (max-width: 860px) {
-  body main .tech h3 {
+  main .tech h3 {
     font-size: small;
   }
 }
-body main .tech .fa-bootstrap {
+main .tech .fa-bootstrap {
   color: #713FC1;
 }
-body main .tech .fa-sass {
+main .tech .fa-sass {
   color: palevioletred;
 }
-body main .tech .fa-html5 {
+main .tech .fa-html5 {
   color: #e34c26;
 }
-body main .tech .fa-git-alt {
+main .tech .fa-git-alt {
   color: #f1502f;
 }
-body main .loc {
+main .loc {
   background-color: #001828;
   font-size: small;
 }
 @media screen and (max-width: 1200px) {
-  body main .loc {
-    max-width: 600px;
+  main .loc {
+    max-width: 525px;
   }
 }
-body main .loc h3 {
+main .loc h3 {
   font-size: medium;
 }
-body main .loc img {
+main .loc img {
   height: 20px;
 }
-body main .loc .contact {
+main .loc .contact {
   background-color: #014F86;
 }
-body main .loc .contact:hover {
+main .loc .contact:hover {
   text-decoration: none;
   background-color: rgba(25, 53, 212, 0.8);
 }
-body main .loc i {
+main .loc i {
   font-size: 30px;
 }
-body main .proyect h3 {
+main .proyect h3 {
   background-color: #014F86;
 }
 @media screen and (max-width: 860px) {
-  body main .proyect h3 {
+  main .proyect h3 {
     font-size: large;
   }
 }
 @media screen and (max-width: 349px) {
-  body main .proyect h3 img {
+  main .proyect h3 img {
     width: 300px !important;
   }
 }
 
 footer {
   background-color: #001828;
+}
+
+.darkMode {
+  background-color: rgb(137, 201, 253);
+}
+.darkMode i {
+  color: black;
+}
+.darkMode p {
+  color: black;
+}
+.darkMode h2 {
+  color: black;
+}
+.darkMode li {
+  color: black;
+}
+.darkMode header nav li {
+  background-color: #4788ff;
+}
+.darkMode header nav li a {
+  color: black;
+}
+.darkMode header div {
+  background-color: rgb(137, 201, 253);
+}
+.darkMode header div h1 span {
+  color: white !important;
+}
+.darkMode main .hobbies {
+  background-color: #4788ff;
+}
+.darkMode main .tech h2 {
+  background-color: #4788ff;
+}
+.darkMode main .tech h3 {
+  color: black;
+}
+.darkMode main .loc {
+  background-color: #4788ff;
+  border: 2px solid white;
+  padding: 14px !important;
+}
+.darkMode main .loc h3 {
+  color: black;
+}
+.darkMode main .loc a {
+  color: black !important;
+}
+.darkMode main .loc address {
+  color: black;
+}
+.darkMode main .loc .contact {
+  background-color: white;
+  border: 2px solid black !important;
+}
+.darkMode footer {
+  background-color: #4788ff;
 }/*# sourceMappingURL=estilos.css.map */
