@@ -60,6 +60,12 @@
                     border:  2px solid black !important;
                 }
             }
+            & section{
+                & h3{
+                    color: black;
+                    background-color: #4788ff;
+                }
+            }
         }
         & footer{
             background-color: #4788ff;

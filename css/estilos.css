@@ -351,6 +351,10 @@ footer {
   background-color: white;
   border: 2px solid black !important;
 }
+.darkMode main section h3 {
+  color: black;
+  background-color: #4788ff;
+}
 .darkMode footer {
   background-color: #4788ff;
 }/*# sourceMappingURL=estilos.css.map */
